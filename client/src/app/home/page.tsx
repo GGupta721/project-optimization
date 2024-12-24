@@ -65,7 +65,7 @@ const HomePage = () => {
     count: priorityCount[key],
   }));
 
-  console.log("Task Distribution", taskDistribution);
+  // console.log("Task Distribution", taskDistribution);
 
   const statusCount = projects.reduce(
     (acc: Record<string, number>, project: Project) => {
@@ -76,14 +76,14 @@ const HomePage = () => {
     {},
   );
 
-  console.log("Status count", statusCount);
+  // console.log("Status count", statusCount);
 
   const projectStatus = Object.keys(statusCount).map((key) => ({
     name: key,
     count: statusCount[key],
   }));
 
-  console.log("Project Status", projectStatus);
+  // console.log("Project Status", projectStatus);
 
   const chartColors = isDarkMode
     ? {
